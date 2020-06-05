@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44721BDB-2676-456C-988F-AF9FEF112002}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entity</RootNamespace>
+    <AssemblyName>Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndroidFCMPushNotificationStatus.cs" />
+    <Compile Include="ApplyPromoCoupon.cs" />
+    <Compile Include="BZOfferBanner.cs" />
+    <Compile Include="BZProduct.cs" />
+    <Compile Include="BzProductDetails.cs" />
+    <Compile Include="CashModel.cs" />
+    <Compile Include="CommonMessageModel.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Constant.cs" />
+    <Compile Include="DealerModel.cs" />
+    <Compile Include="DealerScanModel.cs" />
+    <Compile Include="Expense.cs" />
+    <Compile Include="FarmerModel.cs" />
+    <Compile Include="FarmerOrderListForDeliverModel.cs" />
+    <Compile Include="FarmerPhotoModel.cs" />
+    <Compile Include="FSCOrderDetails.cs" />
+    <Compile Include="GenericModel.cs" />
+    <Compile Include="GeoTagCategoryModel.cs" />
+    <Compile Include="GetPODOrderDetailModel.cs" />
+    <Compile Include="IssueComplaint.cs" />
+    <Compile Include="LogisticActionTakenTripsModel.cs" />
+    <Compile Include="HubHeadApprovalModel.cs" />
+    <Compile Include="HubHeadFODistrictWiseModel.cs" />
+    <Compile Include="HubHeadGetTodayOrderByFoModel.cs" />
+    <Compile Include="HubHeadGetTodayOrderStatusByOrderIdModel.cs" />
+    <Compile Include="HubHeadGetTodayTotalOrderDistrictWiseModel.cs" />
+    <Compile Include="InventroyItemModel.cs" />
+    <Compile Include="LoginModel.cs" />
+    <Compile Include="LogisticGetActionTakenOrderDetailModel.cs" />
+    <Compile Include="NotifyLog.cs" />
+    <Compile Include="OrderDeliveryModel.cs" />
+    <Compile Include="NotificationModel.cs" />
+    <Compile Include="OrderCreateModel.cs" />
+    <Compile Include="OrderDistributorModel.cs" />
+    <Compile Include="OrderModel.cs" />
+    <Compile Include="OrderReturnModel.cs" />
+    <Compile Include="Ozontel_CallLog_Model.cs" />
+    <Compile Include="PackageModel.cs" />
+    <Compile Include="PaymentResponseModel.cs" />
+    <Compile Include="PodDetail.cs" />
+    <Compile Include="PodDetailReport.cs" />
+    <Compile Include="Prod_ProductModel.cs" />
+    <Compile Include="ProductModel.cs" />
+    <Compile Include="Prod_Product_Detail_Model.cs" />
+    <Compile Include="PromoCoupon.cs" />
+    <Compile Include="ReasonModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReprocessItemsModel.cs" />
+    <Compile Include="SathiOrderDetails.cs" />
+    <Compile Include="SearchProduct.cs" />
+    <Compile Include="TaskListModel.cs" />
+    <Compile Include="TempOrderDetailsModel.cs" />
+    <Compile Include="Today_Order_Delivery_Model.cs" />
+    <Compile Include="TrackFOByFoModel.cs" />
+    <Compile Include="TransportCostModel.cs" />
+    <Compile Include="Transporter.cs" />
+    <Compile Include="TransportFareRule.cs" />
+    <Compile Include="TransportVehicle.cs" />
+    <Compile Include="Transport_TotalCost.cs" />
+    <Compile Include="TripCreateModel.cs" />
+    <Compile Include="TripReturnModel.cs" />
+    <Compile Include="TripSheetModel.cs" />
+    <Compile Include="UpdateFarmerDetails.cs" />
+    <Compile Include="UrlModel.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserDetailsModel.cs" />
+    <Compile Include="VegetablePrice.cs" />
+    <Compile Include="WordMeaningModel.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
